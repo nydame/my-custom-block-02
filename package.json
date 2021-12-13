@@ -1,0 +1,28 @@
+{
+  "name": "my-custom-block-01",
+  "version": "1.0.0",
+  "description": "Static block written with JSX",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nydame/my-custom-block-01.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Gutenberg"
+  ],
+  "author": "Felicia Betancourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nydame/my-custom-block-01/issues"
+  },
+  "homepage": "https://github.com/nydame/my-custom-block-01#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "19.2.2"
+  }
+}
