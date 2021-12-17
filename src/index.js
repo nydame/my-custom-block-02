@@ -1,5 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { useBlockProps } from '@wordpress/block-editor';
+import './index.scss';
+import './style.scss';
 
 const blockStyle = {
   backgroundColor: '#900',
@@ -7,18 +9,18 @@ const blockStyle = {
   padding: '20px',
 }
  
-registerBlockType( 'pss-blocks/my-first-gutenberg-block', {
+registerBlockType( 'pss-blocks/my-styled-gutenberg-block', {
   apiVersion: 2,
-  title: 'Basic Example with ESNext',
-  icon: 'smiley',
+  title: 'Basic Styled Block with ESNext',
+  icon: 'art',
   category: 'design',
   example: {},
   edit() {
-    const blockProps = useBlockProps({style: blockStyle});
-    return (<div { ...blockProps }>Hello World (from the editor)</div>);
+    const blockProps = useBlockProps();
+    return (<div { ...blockProps }>I am green (from the editor)</div>);
   },
   save() {
-    const blockProps = useBlockProps.save({style: blockStyle});
-    return (<div { ...blockProps }>Hello World (from the frontend)</div>);
+    const blockProps = useBlockProps.save();
+    return (<div { ...blockProps }>I am yellow (from the frontend)</div>);
   },
 } );
